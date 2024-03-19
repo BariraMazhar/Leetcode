@@ -1,0 +1,10 @@
+In this problem, we have an array of integers called nums and a target integer called target. Our task is to find two distinct numbers within the array that when added together, equal the target. One important rule is that we cannot use the same element from the array twice in our sum. The output will be the indices (positions in the array) of these two numbers, and it does not matter in which order we provide these indices. Each valid input to the problem is guaranteed to have exactly one solution.
+
+------------------
+solution in Python
+------------------
+        1-initialize an empty dictionary, we'll call it lookup.
+        2-Iterate over the nums array, enumerating both the values and its indeces. Enumeration provides a convenient way of getting both the value and the index without additional overhead.
+        4-Check if 'target - val' (complement of the value) is present as a key in the dictionary. If it is found, it means we had already seen the necessary pair earlier in the array.         
+        5-We then retrieve 'lookup[target - val]', which is the index of 'target - val' we had stored, and return a list containing the indices of 'target - val' and the val([lookup['target - value'], i]). This satisfies the requirement as their sum is equal to the target.
+        7-If 'target - val' is not in the dictionary, add the current value val along with its index i to the dictionary (lookup[val] = i). This stores x for future reference if we later come across its complement 'target - value'.
