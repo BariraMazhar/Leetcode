@@ -1,0 +1,3 @@
+
+This program defines a function palindrome that takes a string as input, and then checks if the string is equal to its reverse. If they are equal, the string is a palindrome Otherwise it is not palindrome. 
+In this case, since "madam" reads the same forwards and backwards, it is a palindrome.
