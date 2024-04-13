@@ -1,0 +1,2 @@
+
+The problem requires finding the longest palindromic substring within a given string 's'. We initialize 'start' and 'max_len' to track the starting index and length of the longest palindrome found. Iterating through each character, we consider it as the center of a potential palindrome and expand symmetrically to check for palindromes. We handle both odd and even-length palindromes during expansion. Updating 'start' and 'max_len' when encountering longer palindromes, we ultimately return the longest palindromic substring found in 's'.
