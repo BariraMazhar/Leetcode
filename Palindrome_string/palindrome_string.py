@@ -1,3 +1,5 @@
+
+
 def palindrome( str):
     reversed=str[::-1]
     print(reversed)
